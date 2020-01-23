@@ -1,0 +1,32 @@
+public class Main {
+
+    public static void main(String[]args){
+        Scanner scanner= new Scanner(System.in);
+        System.out.println(" What is the tem? ");
+        int tem= scanner.nextInt();
+        System.out.println(" Is it in farenhight or celcious?   f for farnhight and celcious for c");
+        String name= scanner.next();
+        convert(name,tem);
+    }
+
+    public static void convert(String name, int tem){
+
+        if(name.equalsIgnoreCase("F")){
+            int celcious=(tem-32)*5/9;
+            System.out.println(" The tem in celcious is "+ celcious);
+        }
+
+       else if(name.equalsIgnoreCase("C")){
+            int Farenhight= (tem*9/5)+32;
+            System.out.println(" The tem in Farenhight is "+ Farenhight);
+
+        }
+
+
+
+
+    }
+
+
+
+        }
